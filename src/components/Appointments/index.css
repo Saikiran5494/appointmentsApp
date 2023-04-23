@@ -1,0 +1,97 @@
+/* Write your CSS here */
+.bg-container {
+  padding: 10px;
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  height: 100vh;
+}
+.card-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 25px;
+  color: #171f46;
+}
+.image-details {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 400px;
+  display: none;
+}
+
+.label {
+  font-weight: 700;
+  color: #b5b7c4;
+}
+.input {
+  padding: 7px;
+  margin-top: 10px;
+  outline: none;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.button {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+}
+.appointments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.star {
+  background-color: transparent;
+  border: 1px solid #9897f0;
+  color: #9897f0;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.starred {
+  background-color: #9897f0;
+  border: 1px solid #9897f0;
+  color: #ffffff;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.un-orderedList {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .image-details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .image {
+    display: flex;
+    order: 1;
+    width: 600;
+  }
+  .input {
+    width: 500px;
+  }
+  .un-orderedList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
